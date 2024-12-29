@@ -6,8 +6,8 @@ spring:
     consumer:
       bootstrap-servers: 172.18.0.1:29092
   output:
-  ansi:
-    enabled: ALWAYS
+    ansi:
+      enabled: ALWAYS
 
 logging:
   level:
