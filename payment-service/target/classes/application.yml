@@ -1,5 +1,6 @@
+
 server:
-  port: 8000
+  port: 8500
 spring:
   kafka:
     producer:
@@ -7,6 +8,8 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  application:
+    name: paymentservice
 
 logging:
   level:

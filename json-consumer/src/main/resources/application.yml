@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8700
 spring:
   kafka:
     producer:
@@ -7,6 +7,8 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  application:
+    name: json-consumer
 
 logging:
   level:
@@ -14,4 +16,3 @@ logging:
     org.springframework.web: DEBUG
   pattern:
     console: "%clr(%d{yy-MM-dd E HH:mm:ss.SSS}){blue} %clr(%-5p) %clr(%logger{0}){blue} %clr(%m){yellow}%n"
-    file: "%d{yyyy-MM-dd} %time %level %logger{36} - %msg%n"
