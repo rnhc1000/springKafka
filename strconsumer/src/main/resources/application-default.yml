@@ -1,0 +1,17 @@
+server:
+  port: 8100
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 172.18.0.1:29092
+  output:
+  ansi:
+    enabled: ALWAYS
+
+logging:
+  level:
+    org.springframework: INFO
+    org.springframework.web: DEBUG
+  pattern:
+    console: "%clr(%d{yy-MM-dd E HH:mm:ss.SSS}){blue} %clr(%-5p) %clr(%logger{0}){blue} %clr(%m){yellow}%n"
